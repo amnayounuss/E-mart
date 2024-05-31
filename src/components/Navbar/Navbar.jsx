@@ -32,9 +32,9 @@ const Navbar = () => (
     <div className="py-4">
       <div className="container flex justify-between items-center">
         {/* Logo */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 ">
           <a href="#" className="flex items-center gap-2">
-            <img src="logo.png" alt="E-Mart Logo" className="h-8 sm:h-10" />
+            <img src="logo.png" alt="E-Mart Logo" className="h-8 sm:h-10" width={'200'} />
             {/* <span className="text-primary font-semibold tracking-widest text-2xl uppercase sm:text-3xl">
               E-Mart
             </span> */}

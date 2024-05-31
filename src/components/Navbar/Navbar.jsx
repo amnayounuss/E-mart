@@ -27,6 +27,24 @@ const MenuLinks = [
   }
 ];
 
+const DropdownLinks=[
+  {
+    id: 1,
+    name: "Trending Products",
+    link: "/#"
+  },
+  {
+    id: 2,
+    name: "Best selling",
+    link: "/#"
+  },
+  {
+    id: 3,
+    name: "Top Rated",
+    link: "/#"
+  }
+]
+
 const Navbar = () => (
   <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
     <div className="py-4">
@@ -60,7 +78,20 @@ const Navbar = () => (
                     <FaCaretDown className="group-hover:rotate-180 duration-300 " />
                   </span>
                 </a>
-                <div></div>
+                {/* {dropdown link} */}
+                <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white shadow-md dark:bg-gray-900 p-2 dark:hover:text-white">
+                  <ul className="space-x-6y-2">
+                    {
+                      DropdownLinks.map((data,index)=>(
+                        <li>
+                          <a
+                          className="text-gray-500 dark:hover:text-white duration-200 inline-block rounded-md font-semibold w-full p-2 hover:bg-primary/20"
+                           href={data.link}>{data.name}</a>
+                        </li>
+                      ))
+                    }
+                  </ul>
+                </div>
               </li>
             </ul>
           </div>

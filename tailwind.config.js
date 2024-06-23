@@ -10,7 +10,9 @@ export default {
         brandYellow: "#ffbf00",
         brandGreen: "#00cc99",
         brandBlue: "#4169e1 ",
-        brandWhite: "#c0c0c0"
+        brandWhite: "#c0c0c0",
+        darkBackground: "#221F1F", // Dark green background
+        // darkText: "#00ff00" // Bright green text
       },
       container: {
         center: true,
@@ -23,4 +25,3 @@ export default {
   },
   plugins: [],
 }
-

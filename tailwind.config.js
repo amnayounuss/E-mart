@@ -12,6 +12,7 @@ export default {
         brandBlue: "#4169e1 ",
         brandWhite: "#c0c0c0",
         darkBackground: "#221F1F", // Dark green background
+        whiteBackground: "#F6F1F1", //background navbar lightmode
         // darkText: "#00ff00" // Bright green text
       },
       container: {
